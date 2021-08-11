@@ -120,7 +120,7 @@ For banner over lay add this class to your div
 }
 
 .btn {
-  background-color: pink;
+  background-color: #d17c8a;
   font-size: 16px;
   height: 40px;
   width: 250px;
@@ -135,6 +135,10 @@ For banner over lay add this class to your div
 .information-container {
   background-color: #ece6e6;
   padding: 60px 30px 60px 30px;
+}
+
+.information-container .information-content {
+  justify-content: space-around;
 }
 
 .information-container .information-content .info-boxes {
@@ -221,6 +225,10 @@ main .btn-center .remove_margin{
 main .btn-center .btn a{
   text-decoration: none;
   color: white;
+}
+
+main .btn-center .btn:hover{
+  background-color: red;
 }
 /* main .bottom-content .places-pick .places .place {
 
