@@ -1,10 +1,24 @@
 body {
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 12px;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+footer {
+  background-color: #444343;
+  color: white;
+  font-size: 14px;
+  height: 150px;
+  text-align: center;
+}
+
+hr {
+  padding-top: 60px;
+  margin-bottom: 30px;
 }
 
 /*
@@ -26,7 +40,15 @@ For banner over lay add this class to your div
 </div>
 */
 .banner__container {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner__container:before {
@@ -38,3 +60,168 @@ For banner over lay add this class to your div
   background-color: rgba(0,0,0,0.4);
   content: "";
 }
+
+/* ----Design & Styling--- */
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar {
+  padding: 20px 5px;
+}
+
+.nav-bar a{
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.75fr;
+  margin-left: 400px;
+}
+
+.bg {
+  height: 250px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Box Content */
+.box {
+  align-items: center;
+  /* background-color: white; */
+  width: 600px;
+  text-align: center;
+  /* opacity: 85%; */
+}
+
+.box .box-title h1{
+  color: white;
+  font-size: 70px;
+}
+
+.box .box-content .btn a{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.box .box-content p{
+  color: white;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.btn {
+  background-color: pink;
+  font-size: 16px;
+  height: 40px;
+  width: 250px;
+  margin-left: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Information Container */
+
+.information-container {
+  background-color: #ece6e6;
+  padding: 60px 30px 60px 30px;
+}
+
+.information-container .information-content .info-boxes {
+  /* background-color: grey; */
+  width: 680px;
+}
+
+.information-container .information-content .info-boxes .info-title {
+  background-color: grey;
+  height: 35px;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.information-container .information-content .info-boxes .box-content {
+  background-color: white;
+}
+
+.information-container .information-content .info-boxes .box-content p{
+  font-size: 16px;
+}
+
+.information-container .information-content .info-boxes .box-content .img-in-box{
+  padding-top: 20px;
+  margin-right: 15px;
+  padding-left: 15px;
+}
+
+/* Bottom Container */
+
+main .title{
+  text-align: center;
+  margin: 50px auto 20px;
+}
+
+
+
+main .bottom-content .places-pick .places .place-1 {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+main .bottom-content .places-pick .places .place-2 {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+main .bottom-content .places-pick .places .place-3 {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main .bottom-content .places-pick .places .bg .img-description {
+  /* background-color: white; */
+  color: white;
+  text-align: center;
+  width: 250px;
+}
+
+main .bottom-content .places-pick .places .bg .img-description h3{
+  font-size: 20px;
+}
+
+main .bottom-content .places-pick .places .bg .img-description p{
+  font-size: 12px;
+}
+
+main .btn-center {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+main .btn-center .remove_margin{
+  margin: 0;
+}
+
+main .btn-center .btn a{
+  text-decoration: none;
+  color: white;
+}
+/* main .bottom-content .places-pick .places .place {
+
+} */
